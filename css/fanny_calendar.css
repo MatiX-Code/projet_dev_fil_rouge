@@ -1,0 +1,119 @@
+/*----------------------- Calendar ---------------------------------------*/
+
+/* =========================================================
+    1. STRUCTURE & EN-TÊTES DU CALENDRIER
+   ========================================================= */
+
+/* Noms des jours de la semaine */
+#calendrier .fc-monarch-a3B {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+/* Numéro des jours */
+#calendrier .fc-monarch-1sP {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+/* Titre principal (Mois / Année) */
+#calendrier .fc .fc-toolbar-title {
+    font-family: 'Young Serif', serif;
+    color: #111111;
+    text-transform: capitalize;
+}
+
+/* Mois */
+#calendrier .fc-monarch-AVD {
+    text-transform: capitalize;
+    font-size: xx-large;
+    text-decoration: underline;
+}
+
+/* Liens généraux dans le calendrier */
+#calendrier .fc a {
+    text-decoration: none;
+    color: #111111;
+}
+
+/* =========================================================
+    2. BOUTONS FULLCALENDAR
+   ========================================================= */
+
+/* Boutons normaux (précédent, suivant, aujourd'hui, etc.) */
+#calendrier .fc button,
+#calendrier .fc-toolbar button,
+#calendrier button[class*="fc-"] {
+    background-color: #E36BB9; 
+    background: #E36BB9;
+    border: 3px solid black;
+    color: #111111;         
+    font-family: 'Instrument Sans', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 25px;
+    opacity: 1;
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
+    margin: 8px;
+    padding: 0 15px;
+}
+
+/* Survol des boutons */
+#calendrier .fc button:hover,
+#calendrier .fc-toolbar button:hover,
+#calendrier button[class*="fc-"]:hover {
+    background-color: #64DFDF;
+    background: #64DFDF;
+    border-color: black;
+}
+
+/* Icônes SVG à l'intérieur des boutons du calendrier */
+#calendrier .fc button svg {
+    margin: 5px;
+}
+
+/* =========================================================
+    3. ÉVÉNEMENTS (EVENTS)
+   ========================================================= */
+
+#calendrier .fc-M0 {
+    background-color: #ffffff;
+}
+
+/* Conteneur / Parent du texte de l'événement */
+#calendrier .fc-d0 {
+    padding: 4px 8px;
+    border: 2px solid black;
+    border-radius: 25px;
+    background-color: #E36BB9;
+    justify-content: center;
+}
+
+/* Survol de l'événement */
+#calendrier .fc-d0:hover {
+    background-color: #64DFDF; 
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+/* Texte de l'événement */
+#calendrier .fc-Rw { 
+    font-size: 1rem; 
+    font-weight: 700;
+}
+
+/* =========================================================
+    4. PASTILLE DU JOUR ACTUEL
+   ========================================================= */
+
+#calendrier .mon-jour-actuel .fc-monarch-CCH {
+    background-color: #64DFDF; 
+    color: #111111;           
+    border: 2px solid black;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: auto;              
+    border-radius: 50%;
+}

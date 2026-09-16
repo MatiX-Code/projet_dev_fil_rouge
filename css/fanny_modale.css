@@ -1,0 +1,105 @@
+/* --- Styles de la modale --- */
+/* 1. Le fond sombre qui recouvre toute la page */
+.modal {
+  display: none; /* Cachée par défaut  */
+  position: fixed; 
+  z-index: 1000; /* Passe au-dessus de tout le reste */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Noir semi-transparent */
+  /* Permet de centrer la boîte au milieu de l'écran */
+  align-items: center;
+  justify-content: center;
+}
+
+/* 2. La boîte de dialogue au centre (Référent de position) */
+.modal-content {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px; /* Largeur maximale pour ne pas être trop grande */
+  position: relative; /* Indispensable pour fixer la croix par rapport à ce conteneur */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  max-height: 80vh; /* Hauteur maximale : 80% de l'écran */
+  overflow-y: auto; /* Défilement interne si le contenu est trop long */
+  text-align: center;
+}
+
+/* 3. Le bouton de fermeture (Ancré en haut à droite) */
+.close-btn {
+  position: absolute;
+  top: 0px;   /* Distance fixe depuis le haut de la modale */
+  right: 15px; /* Distance fixe depuis la droite de la modale */
+  
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #E36BB9; 
+  color: #111111;           
+  border: 2px solid #111111;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  
+  /* Dimensions fixes et forme circulaire */
+  width: 35px;
+  height: 35px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  padding: 0;
+  line-height: 1;
+  transition: background-color 0.2s ease;
+}
+
+.close-btn:hover {
+  background-color: #64DFDF; 
+}
+/* En-tête */
+#modalHeader {
+  margin-bottom: 15px;
+}
+/* Titre : la marge à droite empêche le texte de toucher la croix */
+h2 {
+  text-align: center;
+  font-family: "Instrument Sans", sans-serif;
+  font-size: x-large;
+  margin: 0;
+  padding-right: 45px; /* Espace réservé pour la croix à droite */
+}
+
+#modalImg {
+  max-width: 100%;     /* L'image ne dépasse jamais de la modale */
+  height: auto;        /* Conserve les proportions */
+  display: block;      /* Évite les espaces indésirables en dessous */
+  margin: 0 auto 15px; /* Centre l'image et ajoute une marge en bas */ 
+}
+#modalDate{
+    font-family:"Instrument Sans";
+    font-size: large;
+    font-weight: 700;
+}
+#modalHour{
+    text-decoration: underline;
+}
+#modalDescription{
+    font-family:"Instrument Sans";
+    font-size: medium;
+    text-align: center;
+    white-space: pre-line; /* Permet au HTML de respecter les \n */
+    margin-bottom: 35px;
+}
+#modalLien{
+    margin-bottom: 10px;
+    font-family:"Instrument Sans";
+    align-self: end;
+    font-size: xx-large;
+    text-decoration: none;
+    color: #111111;
+
+}
+#modalFooter{
+    background-color: #ffffff;
+}

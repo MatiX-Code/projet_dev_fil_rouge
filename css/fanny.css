@@ -1,0 +1,196 @@
+@import "../css/fanny_media_queries.css";
+@import "../css/fanny_calendar.css";
+@import "../css/fanny_modale.css";
+
+/*Base CSS */
+body{
+    margin: 0;
+    padding: 0;
+}
+#navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin :0px;
+    
+}
+
+/* Menu Burger */
+#burger span {
+    display: block;          
+    width: 50px;            
+    height: 8px;             
+    margin-bottom: 5px;      
+    background-color: black; 
+    border-radius: 2px;
+    transition: all 0.3s ease-in-out; 
+    
+}
+#burger span:last-child {
+    margin-bottom: 0;
+}
+nav.open {
+    display: flex; 
+    flex-direction: column;
+    transform: translateX(0.3%);
+}
+button:not(.fc-button){
+    background-color: #E36BB9;
+    border: 3px solid black;
+    margin: 20px;
+    padding:0px 20px;
+    cursor: pointer;
+    /* font-size: 21px; */
+    font-size: 1.313rem;
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    border-radius: 25px;
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
+}
+#burger{
+    display: none;
+    background: transparent; 
+    border: none;           
+    cursor: pointer;        
+    padding: 0;             
+}
+/* Main */
+main{
+    display: flex;
+    flex-direction: column;
+    min-height: 82vh;
+    margin: 0;
+    padding: 0;
+}
+section.accueil{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    font-size: 35px;
+    margin: 50px;
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal; 
+    text-align: center;   
+}
+img{
+    margin: auto;
+    max-width: 100%;
+    height: auto;
+    border : black solid 5px;
+}
+img.logo{
+    border : none;
+    
+}
+#calendrier {
+    max-width: 1500px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 20px auto;
+    padding: 15px; /* Réduit de 24px à 15px pour gagner de l'espace */
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgb(0, 0, 0);
+    font-family: "Instrument Sans", sans-serif;
+}
+input.newletter{
+    border: 2px black solid;
+}
+footer{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    background-color:black;
+}
+
+#reseaux {
+    display: flex;
+    justify-content: start;
+    gap: 20px;
+    padding-left: 20px;
+}
+#mentions{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+#tel{
+    display: flex;
+    justify-content: end;
+    color: white;
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.875rem;
+    margin-right: 15px;
+}
+.reseaux-icon{
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 3rem;
+    height: 3rem;
+} 
+a.footer{
+    color: white;
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+    padding-right: 10px;
+}
+p{
+    font-family: "Instrument Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+    font-size: 18px ;
+}
+section.spectacle{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+p.newletter{
+    margin-top: 55px;
+    font-family: "Instrument Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+    font-size: 1.5rem ;
+    text-align: center;
+}
+form.newletter{
+    text-align: center;
+    font-size: xx-large;
+    margin-bottom: 30px;
+}
+input.envoyer{
+    background-color: #E36BB9;
+    border: 3px solid black;
+    margin: 20px;
+    padding:0px 20px;
+    cursor: pointer;
+    /* font-size: 21px; */
+    font-size: 1.313rem;
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    border-radius: 25px;
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
+}
+input.newletter{
+    font-size: x-large;
+}
+
