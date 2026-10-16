@@ -4,7 +4,7 @@
         flex-direction: column;
         align-self: start;
     }
-    nav{
+    #nav-links{
         position: fixed;
         top: 0;
         left: 0;
@@ -32,6 +32,9 @@
         font-size:0.8rem;
         padding: 5px;
     }
+    #nav-links.open {
+    transform: translateX(0);
+}
     #burger{
         display: block;
         z-index :1001;
@@ -121,7 +124,7 @@ input.newletter{
         flex-direction: column;
         align-self: start;
     }
-    nav{
+    #nav-links{
         position: fixed;
         top: 0;
         left: 0;
@@ -179,7 +182,7 @@ input.newletter{
 
 /* Media Queries pour taille  petit desktop */ 
 @media screen and (min-width: 1024px) and (max-width: 1439.9px) {
-    nav {
+    #nav-links {
         display: flex !important;
         flex-direction: row !important; /* Force l'alignement horizontal */
         position: static; /* Annule le positionnement fixe du mobile */
@@ -201,7 +204,7 @@ input.newletter{
 
 /* Media Queries pour taille  desktop */ 
 @media screen and (min-width: 1440px){
-        nav {
+        #nav-links {
         display: flex !important;
         flex-direction: row !important; /* Force l'alignement horizontal */
         position: static; /* Annule le positionnement fixe du mobile */
