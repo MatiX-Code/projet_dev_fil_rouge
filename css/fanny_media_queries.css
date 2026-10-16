@@ -47,8 +47,8 @@
         font-size: 1rem;
         padding:10px 0px;
     }
-    #tel{
-        font-size: 1rem;
+    #tel a{
+        font-size: 0.875rem;
     }
     .reseaux-icon{
         width: 1.5rem;
